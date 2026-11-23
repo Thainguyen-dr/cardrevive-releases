@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CardRevive – Cứu dữ liệu thẻ nhớ cho Mac</title>
+<meta name="description" content="CardRevive: phần mềm cứu ảnh RAW, video, tài liệu từ thẻ nhớ SD, CFexpress, USB, ổ cứng trên macOS. Quét miễn phí, nâng cấp Pro để khôi phục.">
+<link rel="icon" href="logo.png">
+<style>
+:root{--bg:#070a12;--ink:#e9edf7;--ink2:#c3c9d8;--mute:#8790a6;--dim:#5d6579;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);
+--grad:linear-gradient(135deg,#7c5cff 0%,#4f6bff 52%,#22d3ee 100%);--ok:#34d399}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+body:before{content:"";position:fixed;inset:-20% -10% auto;height:70vh;background:radial-gradient(closest-side,rgba(124,92,255,.22),transparent),radial-gradient(closest-side at 80% 40%,rgba(34,211,238,.12),transparent);z-index:-1}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;align-items:center;gap:12px;padding:18px 0}
+nav img{width:34px;height:34px}
+nav b{font-size:18px}
+nav .sp{flex:1}
+nav a{color:var(--ink2);text-decoration:none;font-size:14px;margin-left:18px}
+.g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{text-align:center;padding:64px 0 40px}
+.hero h1{font-size:clamp(32px,6vw,56px);line-height:1.1;margin:0 0 16px;letter-spacing:-.03em}
+.hero p{color:var(--ink2);font-size:18px;max-width:680px;margin:0 auto 28px}
+.by{font-weight:700;font-size:14px;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:12px;border:1px solid var(--line2);background:rgba(255,255,255,.04);color:var(--ink);font-weight:650;text-decoration:none;cursor:pointer;font-size:15px}
+.btn.p{border:0;background:var(--grad);color:#fff;box-shadow:0 8px 26px -8px rgba(110,92,255,.8)}
+.btn[aria-disabled=true]{opacity:.55;cursor:default}
+.row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:40px 0}
+.card{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:18px;padding:20px}
+.card h3{margin:0 0 6px;font-size:16px}
+.card p{margin:0;color:var(--mute);font-size:14px}
+h2{text-align:center;font-size:32px;letter-spacing:-.02em;margin:64px 0 8px}
+.sub{text-align:center;color:var(--mute);margin:0 0 28px}
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.price{border:1px solid var(--line2);border-radius:20px;padding:26px;background:rgba(255,255,255,.03);display:flex;flex-direction:column}
+.price.best{border-color:rgba(124,92,255,.75);background:linear-gradient(180deg,rgba(124,92,255,.12),rgba(255,255,255,.02));position:relative}
+.price.best:after{content:"Tiết kiệm 59%";position:absolute;top:-12px;right:18px;background:var(--grad);color:#fff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px}
+.price h3{margin:0;font-size:18px}
+.amt{font-size:42px;font-weight:800;letter-spacing:-.03em;margin:10px 0 2px}
+.amt small{font-size:15px;font-weight:600;color:var(--mute)}
+.price ul{list-style:none;padding:0;margin:16px 0 22px;flex:1}
+.price li{padding:5px 0 5px 24px;position:relative;color:var(--ink2);font-size:14.5px}
+.price li:before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}
+.price li.no{color:var(--dim)}
+.price li.no:before{content:"✕";color:var(--dim)}
+details{border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0;background:rgba(255,255,255,.02)}
+summary{cursor:pointer;font-weight:650}
+details p{color:var(--ink2);margin:10px 0 0;font-size:15px}
+footer{margin-top:72px;padding:26px 0 40px;border-top:1px solid var(--line);text-align:center;color:var(--dim);font-size:13px;line-height:1.9}
+footer b{color:var(--mute)}
+footer a{color:var(--mute)}
+@media (max-width:600px){nav a{display:none}.hero{padding-top:36px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><img src="logo.png" alt=""><b>CardRevive</b><span class="sp"></span>
+  <a href="#tinh-nang">Tính năng</a><a href="#bang-gia">Bảng giá</a><a href="#hoi-dap">Hỏi đáp</a></nav>
+
+<section class="hero">
+  <div class="by g">Created by Do Quoc Thai Nguyen</div>
+  <h1>Cứu lại <span class="g">ảnh, video &amp; tài liệu</span><br>đã xoá hoặc mất do format</h1>
+  <p>Phần mềm cứu dữ liệu cho Mac: thẻ SD, microSD, CFexpress, XQD, USB, ổ cứng HDD / SSD. Quét và xem trước <b>miễn phí</b>. Chỉ trả tiền khi thấy file của bạn còn cứu được.</p>
+  <div class="row"><a class="btn p" id="dl" aria-disabled="true">Tải miễn phí – sắp phát hành</a><a class="btn" href="#bang-gia">Xem bảng giá</a></div>
+  <p style="font-size:13px;color:var(--dim);margin-top:14px">macOS 11 trở lên · Mac Intel &amp; Apple Silicon (M1–M4)</p>
+</section>
+
+<section class="feats" id="tinh-nang">
+  <div class="card"><h3>📷 Hơn 40 định dạng RAW &amp; video</h3><p>ARW, CR3, NEF, RAF, DNG… cùng MP4/MOV/MXF của Sony, Canon, Nikon, Fujifilm, Panasonic.</p></div>
+  <div class="card"><h3>🔒 Chỉ đọc, không ghi lên thẻ</h3><p>Không làm mất thêm dữ liệu. File tìm được lưu sang ổ khác.</p></div>
+  <div class="card"><h3>🎬 Dựng lại video Sony bị mất đầu</h3><p>Tự ghép header cho video XAVC sau khi format, vá khung hình hỏng.</p></div>
+  <div class="card"><h3>🧩 Sao lưu thẻ sắp hỏng</h3><p>Chép nguyên thẻ ra file ảnh đĩa trước, rồi cứu trên bản sao cho an toàn.</p></div>
+  <div class="card"><h3>👀 Xem trước trước khi mua</h3><p>Gói Free hiện đầy đủ file tìm được và ảnh xem trước, biết chắc rồi mới nâng cấp.</p></div>
+  <div class="card"><h3>💻 Chạy trên máy bạn</h3><p>Ảnh và video không bao giờ được gửi lên Internet.</p></div>
+</section>
+
+<h2 id="bang-gia">Bảng giá</h2>
+<p class="sub">Huỷ bất kỳ lúc nào · Hoàn tiền trong 7 ngày nếu không cứu được file nào</p>
+<section class="prices">
+  <div class="price"><h3>Free</h3><div class="amt">$0</div><small style="color:var(--mute)">Dùng mãi mãi</small>
+    <ul><li>Quét toàn bộ thẻ / ổ đĩa</li><li>Xem danh sách &amp; xem trước file tìm được</li><li>Sao lưu toàn thẻ ra file ảnh đĩa</li><li class="no">Khôi phục (tải về) file</li></ul>
+    <a class="btn" aria-disabled="true">Sắp phát hành</a></div>
+  <div class="price"><h3>Pro tháng</h3><div class="amt">$20<small> / tháng</small></div><small style="color:var(--mute)">Phù hợp khi cần cứu 1 lần</small>
+    <ul><li>Mọi tính năng gói Free</li><li><b>Khôi phục tất cả file</b>, không giới hạn dung lượng</li><li>Sửa video hỏng, dựng video bị mất đầu</li><li>Cập nhật miễn phí trong thời gian dùng</li></ul>
+    <a class="btn p buy" data-link="" aria-disabled="true">Sắp mở bán</a></div>
+  <div class="price best"><h3>Pro năm</h3><div class="amt">$99<small> / năm</small></div><small style="color:var(--mute)">Chỉ $8,25/tháng · cho thợ ảnh, studio, tiệm sửa máy</small>
+    <ul><li>Toàn bộ gói Pro</li><li>Dùng cứu dữ liệu cho khách hàng (có thu phí)</li><li>Ưu tiên hỗ trợ</li></ul>
+    <a class="btn p buy" data-link="" aria-disabled="true">Sắp mở bán</a></div>
+</section>
+<p class="sub" style="margin-top:14px;font-size:13px">Thanh toán an toàn qua Dodo Payments (Visa, Mastercard, Apple Pay…). License key được gửi qua email ngay sau khi thanh toán. Giá chưa gồm thuế (nếu có).</p>
+
+<h2 id="hoi-dap">Hỏi đáp</h2>
+<div style="max-width:760px;margin:0 auto">
+<details><summary>Gói Free khác gói Pro thế nào?</summary><p>Free cho quét và xem trước mọi file tìm được. Pro cho khôi phục (lưu) các file đó ra ổ đĩa của bạn.</p></details>
+<details><summary>Huỷ gói như thế nào?</summary><p>Bấm link quản lý trong email mua hàng, chọn Cancel. Bạn vẫn dùng Pro tới hết kỳ đã trả, sau đó tự về gói Free.</p></details>
+<details><summary>Dùng được trên mấy máy?</summary><p>Mỗi key dùng trên 1 máy Mac tại một thời điểm. Muốn đổi máy, bấm "Gỡ kích hoạt máy này" trên máy cũ.</p></details>
+<details><summary>Ảnh đã bị chụp đè có cứu được không?</summary><p>Phần đã bị ghi đè thì không phần mềm nào khôi phục được. Hãy quét thử miễn phí để biết chính xác.</p></details>
+<details><summary>Không có Internet có dùng được không?</summary><p>Có. Gói Pro vẫn hoạt động tối đa 7 ngày ngoại tuyến kể từ lần kiểm tra key gần nhất.</p></details>
+</div>
+
+<footer>
+  CardRevive · Phần mềm khôi phục dữ liệu cho macOS · <a href="https://github.com/Thainguyen-dr/cardrevive-releases/blob/main/TERMS.md">Điều khoản sử dụng</a> · <a href="https://github.com/Thainguyen-dr/cardrevive-releases/blob/main/REFUND.md">Hoàn tiền</a> · <a href="https://github.com/Thainguyen-dr/cardrevive-releases/blob/main/PRIVACY.md">Quyền riêng tư</a><br>
+  <b>Created by Do Quoc Thai Nguyen · © 2026 Đỗ Quốc Thái Nguyên. All rights reserved.</b>
+</footer>
+</div>
+<script>
+// Khi có link thanh toán Dodo: điền vào data-link của 2 nút, nút tự bật.
+document.querySelectorAll('.buy').forEach(b => {
+  if (b.dataset.link) { b.href = b.dataset.link; b.removeAttribute('aria-disabled'); b.textContent = 'Mua ngay'; }
+});
+</script>
+</body>
+</html>
