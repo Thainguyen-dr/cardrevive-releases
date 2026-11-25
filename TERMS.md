@@ -27,18 +27,17 @@ Phần mềm được bảo hộ theo Luật Sở hữu trí tuệ Việt Nam v�
 Giá chưa gồm thuế giá trị gia tăng hoặc thuế bán hàng tại nước của người mua, nếu có. Thuế được tính và thu tại trang thanh toán.
 
 ## 3. Thanh toán, gia hạn và huỷ
-
-- Thanh toán qua **Dodo Payments**, đơn vị bán hàng chính thức (Merchant of Record). Dodo Payments xử lý thẻ, hoá đơn và thuế. Tác giả không lưu thông tin thẻ của Người dùng.
-- Gói Pro **tự động gia hạn** theo chu kỳ đã chọn (tháng hoặc năm) cho đến khi Người dùng huỷ.
-- Người dùng có thể **huỷ bất kỳ lúc nào** trong cổng quản lý khách hàng của Dodo Payments, theo đường link trong email mua hàng. Sau khi huỷ, Pro vẫn dùng được đến hết kỳ đã trả tiền, rồi tự chuyển về gói Free.
-- Nếu gia hạn không thành công, key có thể bị tạm khoá cho đến khi thanh toán xong.
-- Tác giả có thể thay đổi giá. Giá mới chỉ áp dụng từ kỳ gia hạn tiếp theo, và Người dùng được báo trước qua email ít nhất 14 ngày.
+- **Trong nước:** chuyển khoản ngân hàng hoặc MoMo bằng mã VietQR tạo trên trang bán hàng, vào tài khoản MB Bank đứng tên Đỗ Quốc Thái Nguyên. Key được **tự động gửi qua email** sau khi tiền về. Gói **không tự trừ tiền**: gần hết hạn, Người dùng đặt mua lại với cùng mã máy, thời hạn mới được cộng nối tiếp.
+- **Quốc tế (khi mở bán):** thanh toán thẻ qua Dodo Payments (Merchant of Record), có thể tự gia hạn theo chu kỳ và huỷ bất kỳ lúc nào trong cổng khách hàng; sau khi huỷ vẫn dùng Pro đến hết kỳ đã trả.
+- Hết hạn mà chưa gia hạn, Phần mềm tự chuyển về gói Free; dữ liệu đã khôi phục không bị ảnh hưởng.
+- Tác giả có thể thay đổi giá; giá mới không ảnh hưởng tới key đã cấp.
 
 ## 4. License key
 
 - Key được gửi qua email sau khi thanh toán. Key là cá nhân: không được chia sẻ, bán lại hoặc đăng công khai.
-- Mỗi key được **kích hoạt trên 1 máy**. Muốn chuyển sang máy khác, bấm "Gỡ kích hoạt máy này" trên máy cũ.
-- Phần mềm kiểm tra key với máy chủ định kỳ. Khi không có Internet, Pro vẫn dùng được **tối đa 7 ngày** kể từ lần kiểm tra thành công gần nhất.
+- Mỗi key dùng trên **1 máy**. Đổi máy: liên hệ tác giả qua email nhận key để được hỗ trợ cấp lại.
+- Key mua trong nước gắn với **mã máy** và có **ngày hết hạn** ghi trong key, dùng được cả khi không có Internet. Không chỉnh lùi đồng hồ máy để kéo dài hạn dùng.
+- Key mua quốc tế được kiểm tra với máy chủ định kỳ; khi không có Internet, Pro vẫn dùng được tối đa 7 ngày.
 - Key bị thu hồi khi gói bị huỷ, hết hạn, hoàn tiền, khi có tranh chấp thanh toán (chargeback), hoặc khi Người dùng vi phạm Điều 5.
 
 ## 5. Những việc không được làm

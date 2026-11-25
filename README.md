@@ -10,11 +10,11 @@ Phần mềm cứu ảnh RAW, video, tài liệu từ thẻ nhớ SD / microSD /
 
 | Gói | Giá | Quyền |
 |---|---|---|
-| Free | $0 | Quét, xem trước mọi file tìm được. Không khôi phục (tải về). |
-| **Pro tháng** | **$20 / tháng** | Khôi phục tất cả file, sửa video hỏng. |
-| **Pro năm** | **$99 / năm** (tiết kiệm 59%) | Như Pro tháng, dùng được cho dịch vụ cứu dữ liệu có thu phí. |
+| Free | 0đ | Quét, xem trước mọi file tìm được. Không khôi phục (tải về). |
+| **Pro tháng** | **499.000đ / tháng** (≈ $20) | Khôi phục tất cả file, sửa video hỏng. |
+| **Pro năm** | **2.490.000đ / năm** (≈ $99, tiết kiệm 59%) | Như Pro tháng, dùng được cho dịch vụ cứu dữ liệu có thu phí. |
 
-Thanh toán qua Dodo Payments. License key gửi qua email. Huỷ bất kỳ lúc nào.
+Thanh toán bằng chuyển khoản ngân hàng / MoMo (mã VietQR). License key **tự động gửi qua email** sau khi tiền về.
 
 ## ⬇️ Tải về
 

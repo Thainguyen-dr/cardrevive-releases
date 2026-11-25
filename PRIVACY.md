@@ -9,20 +9,11 @@ CardRevive chạy **hoàn toàn trên máy của bạn**. Phần mềm chỉ **�
 
 Ảnh, video, tài liệu, tên file và nội dung ổ đĩa **không bao giờ** được gửi lên Internet.
 
-## Dữ liệu gửi đi khi kiểm tra license key (chỉ gói Pro)
-
-Khi bạn kích hoạt Pro, và định kỳ khoảng 12 giờ một lần khi đang dùng, phần mềm gửi tới máy chủ cấp key của **Dodo Payments**:
-- license key của bạn;
-- mã kích hoạt;
-- tên máy tính (ví dụ "MacBook Pro"), để bạn nhận ra máy trong danh sách kích hoạt.
-
-Phần mềm không gửi thêm thông tin nào khác.
-
-## Dữ liệu mua hàng
-
-Khi mua Pro, bạn thanh toán trực tiếp với **Dodo Payments**, đơn vị bán hàng chính thức (Merchant of Record).
-- Dodo Payments xử lý tên, email, địa chỉ thanh toán và thông tin thẻ theo chính sách bảo mật của họ.
-- Tác giả chỉ thấy tên, email và trạng thái đơn hàng để hỗ trợ bạn. Tác giả **không** thấy số thẻ.
+## Dữ liệu khi mua và kích hoạt Pro
+- **Mua trong nước:** bạn nhập email và mã máy trên trang bán hàng. Thông tin đơn (email, mã máy, gói, số tiền, mã giao dịch ngân hàng) được lưu trong Google Sheet của tác giả để gửi key, hỗ trợ và đối soát. Dịch vụ SePay chuyển thông báo giao dịch ngân hàng (số tiền, nội dung chuyển khoản) tới máy chủ bán key. Key được gửi từ Gmail của tác giả.
+- **Kích hoạt key trong nước** diễn ra hoàn toàn trên máy, không gửi gì lên Internet.
+- **Mua quốc tế (khi mở bán):** thanh toán trực tiếp với Dodo Payments (Merchant of Record); phần mềm gửi license key, mã kích hoạt và tên máy tới máy chủ của Dodo khi kích hoạt và định kỳ ~12 giờ/lần. Tác giả không thấy số thẻ.
+- **Mã máy** là chuỗi 8 ký tự tính một chiều từ mã phần cứng máy Mac; không thể suy ngược ra thông tin máy.
 
 ## File lưu trên máy bạn
 

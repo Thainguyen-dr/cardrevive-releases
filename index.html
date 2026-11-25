@@ -83,19 +83,20 @@ footer a{color:var(--mute)}
   <div class="price"><h3>Free</h3><div class="amt">$0</div><small style="color:var(--mute)">Dùng mãi mãi</small>
     <ul><li>Quét toàn bộ thẻ / ổ đĩa</li><li>Xem danh sách &amp; xem trước file tìm được</li><li>Sao lưu toàn thẻ ra file ảnh đĩa</li><li class="no">Khôi phục (tải về) file</li></ul>
     <a class="btn" aria-disabled="true">Sắp phát hành</a></div>
-  <div class="price"><h3>Pro tháng</h3><div class="amt">$20<small> / tháng</small></div><small style="color:var(--mute)">Phù hợp khi cần cứu 1 lần</small>
+  <div class="price"><h3>Pro tháng</h3><div class="amt">499.000đ<small> / tháng</small></div><small style="color:var(--mute)">≈ $20</small><small style="color:var(--mute)">· phù hợp khi cần cứu 1 lần</small>
     <ul><li>Mọi tính năng gói Free</li><li><b>Khôi phục tất cả file</b>, không giới hạn dung lượng</li><li>Sửa video hỏng, dựng video bị mất đầu</li><li>Cập nhật miễn phí trong thời gian dùng</li></ul>
-    <a class="btn p buy" data-link="" aria-disabled="true">Sắp mở bán</a></div>
-  <div class="price best"><h3>Pro năm</h3><div class="amt">$99<small> / năm</small></div><small style="color:var(--mute)">Chỉ $8,25/tháng · cho thợ ảnh, studio, tiệm sửa máy</small>
+    <a class="btn p buy" data-plan="month" aria-disabled="true">Sắp mở bán</a></div>
+  <div class="price best"><h3>Pro năm</h3><div class="amt">2.490.000đ<small> / năm</small></div><small style="color:var(--mute)">≈ $99</small><small style="color:var(--mute)">Chỉ 207.500đ/tháng · cho thợ ảnh, studio, tiệm sửa máy</small>
     <ul><li>Toàn bộ gói Pro</li><li>Dùng cứu dữ liệu cho khách hàng (có thu phí)</li><li>Ưu tiên hỗ trợ</li></ul>
-    <a class="btn p buy" data-link="" aria-disabled="true">Sắp mở bán</a></div>
+    <a class="btn p buy" data-plan="year" aria-disabled="true">Sắp mở bán</a></div>
 </section>
-<p class="sub" style="margin-top:14px;font-size:13px">Thanh toán an toàn qua Dodo Payments (Visa, Mastercard, Apple Pay…). License key được gửi qua email ngay sau khi thanh toán. Giá chưa gồm thuế (nếu có).</p>
+<p class="sub" style="margin-top:14px;font-size:13px">Thanh toán bằng <b>chuyển khoản ngân hàng hoặc MoMo</b> (quét mã VietQR). License key được <b>tự động gửi qua email</b> trong khoảng 1 phút sau khi tiền về.</p>
 
 <h2 id="hoi-dap">Hỏi đáp</h2>
 <div style="max-width:760px;margin:0 auto">
 <details><summary>Gói Free khác gói Pro thế nào?</summary><p>Free cho quét và xem trước mọi file tìm được. Pro cho khôi phục (lưu) các file đó ra ổ đĩa của bạn.</p></details>
-<details><summary>Huỷ gói như thế nào?</summary><p>Bấm link quản lý trong email mua hàng, chọn Cancel. Bạn vẫn dùng Pro tới hết kỳ đã trả, sau đó tự về gói Free.</p></details>
+<details><summary>Gia hạn như thế nào?</summary><p>Gói không tự trừ tiền. Gần hết hạn, app sẽ nhắc. Bạn đặt hàng lại với cùng mã máy: thời hạn mới được cộng nối tiếp, không mất ngày nào.</p></details>
+<details><summary>Mã máy là gì, xem ở đâu?</summary><p>Mỗi máy Mac có một mã 8 ký tự. Mở CardRevive → bấm <b>Nâng cấp Pro</b> để xem. Key chỉ dùng được trên máy có mã đó.</p></details>
 <details><summary>Dùng được trên mấy máy?</summary><p>Mỗi key dùng trên 1 máy Mac tại một thời điểm. Muốn đổi máy, bấm "Gỡ kích hoạt máy này" trên máy cũ.</p></details>
 <details><summary>Ảnh đã bị chụp đè có cứu được không?</summary><p>Phần đã bị ghi đè thì không phần mềm nào khôi phục được. Hãy quét thử miễn phí để biết chính xác.</p></details>
 <details><summary>Không có Internet có dùng được không?</summary><p>Có. Gói Pro vẫn hoạt động tối đa 7 ngày ngoại tuyến kể từ lần kiểm tra key gần nhất.</p></details>
@@ -106,11 +107,80 @@ footer a{color:var(--mute)}
   <b>Created by Do Quoc Thai Nguyen · © 2026 Đỗ Quốc Thái Nguyên. All rights reserved.</b>
 </footer>
 </div>
+
+<div id="buyBg" style="display:none;position:fixed;inset:0;background:rgba(3,5,10,.7);backdrop-filter:blur(6px);z-index:50;place-items:center;padding:16px">
+ <div style="width:min(460px,100%);max-height:94vh;overflow:auto;background:linear-gradient(180deg,#1c2134,#0e121e);border:1px solid var(--line2);border-radius:20px;padding:24px">
+  <h3 style="margin:0 0 4px;font-size:20px" id="bTitle">Mua CardRevive Pro</h3>
+  <div id="bForm">
+   <p style="color:var(--mute);margin:0 0 14px;font-size:14px">Key sẽ được tự động gửi tới email của bạn sau khi chuyển khoản.</p>
+   <label class="lb">Gói</label>
+   <select id="bPlan" class="in"><option value="month">Pro tháng – 499.000đ</option><option value="year">Pro năm – 2.490.000đ (tiết kiệm 59%)</option></select>
+   <label class="lb">Email nhận key</label><input id="bEmail" class="in" type="email" placeholder="ban@gmail.com" autocomplete="email">
+   <label class="lb">Mã máy (CardRevive → Nâng cấp Pro)</label><input id="bMachine" class="in" placeholder="Ví dụ: K7Q2M6XA" maxlength="9" style="text-transform:uppercase;letter-spacing:.12em">
+   <p id="bErr" style="color:#fbbf24;font-size:13px;min-height:18px;margin:8px 0"></p>
+   <div class="row" style="justify-content:flex-end"><a class="btn" id="bClose">Đóng</a><a class="btn p" id="bGo">Tạo mã QR thanh toán</a></div>
+   <p style="font-size:12px;color:var(--dim);margin:12px 0 0">Bấm tạo mã là bạn đồng ý với <a href="https://github.com/Thainguyen-dr/cardrevive-releases/blob/main/TERMS.md" target="_blank">Điều khoản sử dụng</a>.</p>
+  </div>
+  <div id="bPay" style="display:none;text-align:center">
+   <p style="color:var(--ink2);margin:6px 0 12px;font-size:14px">Mở <b>app ngân hàng</b> hoặc <b>MoMo</b> → Quét mã QR. Số tiền và nội dung đã có sẵn.</p>
+   <img id="bQR" alt="Mã QR thanh toán" style="width:min(300px,100%);border-radius:14px;background:#fff">
+   <table style="margin:14px auto 0;font-size:14px;text-align:left;color:var(--ink2)">
+    <tr><td style="padding:3px 12px 3px 0">Ngân hàng</td><td><b>MB Bank</b></td></tr>
+    <tr><td style="padding:3px 12px 3px 0">Số tài khoản</td><td><b id="bAcc"></b></td></tr>
+    <tr><td style="padding:3px 12px 3px 0">Chủ tài khoản</td><td><b id="bName"></b></td></tr>
+    <tr><td style="padding:3px 12px 3px 0">Số tiền</td><td><b id="bAmt"></b></td></tr>
+    <tr><td style="padding:3px 12px 3px 0">Nội dung</td><td><b id="bCode" style="color:#c9bfff;font-size:16px;letter-spacing:.06em"></b></td></tr>
+   </table>
+   <p id="bStat" style="margin:16px 0 4px;color:var(--mute);font-size:14px">⏳ Đang chờ tiền về… (tự cập nhật)</p>
+   <p style="font-size:12px;color:var(--dim);margin:0">Nhớ giữ đúng nội dung chuyển khoản để hệ thống tự nhận đơn.</p>
+   <div class="row" style="margin-top:14px"><a class="btn" id="bClose2">Đóng</a></div>
+  </div>
+ </div>
+</div>
+<style>.lb{display:block;font-size:13px;color:var(--mute);margin:10px 0 5px}.in{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line2);background:rgba(0,0,0,.3);color:var(--ink);font:inherit}</style>
 <script>
-// Khi có link thanh toán Dodo: điền vào data-link của 2 nút, nút tự bật.
+// Máy chủ bán key tự động (Google Apps Script). Để trống = chưa mở bán.
+const SERVER = '';
+const $ = id => document.getElementById(id);
+const fmt = n => n.toLocaleString('vi-VN') + 'đ';
+let poll = null;
+function openBuy(plan) {
+  $('bPlan').value = plan || 'month';
+  const m = new URLSearchParams(location.search).get('machine'); if (m) $('bMachine').value = m;
+  $('bForm').style.display = ''; $('bPay').style.display = 'none'; $('bErr').textContent = '';
+  $('buyBg').style.display = 'grid';
+}
+function closeBuy() { $('buyBg').style.display = 'none'; clearInterval(poll); }
+$('bClose').onclick = closeBuy; $('bClose2').onclick = closeBuy;
+$('bGo').onclick = async () => {
+  $('bErr').textContent = 'Đang tạo đơn…';
+  try {
+    const r = await fetch(SERVER, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ action: 'order', plan: $('bPlan').value, email: $('bEmail').value, machine: $('bMachine').value }) });
+    const o = await r.json();
+    if (!o.ok) { $('bErr').textContent = o.error || 'Không tạo được đơn, thử lại sau.'; return; }
+    $('bQR').src = o.qr; $('bAcc').textContent = o.account; $('bName').textContent = o.name;
+    $('bAmt').textContent = fmt(o.amount); $('bCode').textContent = o.code; $('bTitle').textContent = 'Thanh toán ' + o.plan;
+    $('bForm').style.display = 'none'; $('bPay').style.display = '';
+    clearInterval(poll);
+    poll = setInterval(async () => {
+      try {
+        const s = await (await fetch(SERVER + '?action=status&code=' + o.code)).json();
+        if (s.status === 'Đã gửi key') {
+          clearInterval(poll);
+          $('bStat').innerHTML = '✅ <b>Đã nhận tiền!</b> Key đã được gửi tới <b>' + $('bEmail').value + '</b>. Kiểm tra cả mục Spam/Quảng cáo.';
+          $('bStat').style.color = '#34d399';
+        } else if (s.status === 'Thiếu tiền') {
+          $('bStat').textContent = '⚠️ Đã nhận nhưng chưa đủ số tiền. Hãy chuyển thêm phần còn thiếu với cùng nội dung.';
+        }
+      } catch (e) {}
+    }, 5000);
+  } catch (e) { $('bErr').textContent = 'Không kết nối được máy chủ. Thử lại sau ít phút.'; }
+};
 document.querySelectorAll('.buy').forEach(b => {
-  if (b.dataset.link) { b.href = b.dataset.link; b.removeAttribute('aria-disabled'); b.textContent = 'Mua ngay'; }
+  if (SERVER) { b.removeAttribute('aria-disabled'); b.textContent = 'Mua ngay'; b.href = '#mua'; b.onclick = e => { e.preventDefault(); openBuy(b.dataset.plan); }; }
 });
+if (SERVER && location.hash === '#mua') openBuy(new URLSearchParams(location.search).get('plan'));
 </script>
 </body>
 </html>
