@@ -18,7 +18,9 @@ Thanh toán bằng chuyển khoản ngân hàng / MoMo (mã VietQR). License key
 
 ## ⬇️ Tải về
 
-Bản có gói Free / Pro **sắp phát hành** tại mục [Releases](https://github.com/Thainguyen-dr/cardrevive-releases/releases).
+👉 **[Tải CardRevive 4.9.4 (bộ cài .pkg)](https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-4.9.4-macOS.pkg)** · [Các phiên bản](https://github.com/Thainguyen-dr/cardrevive-releases/releases)
+
+Gói Free cho quét và xem trước. Muốn tải file về: trong app bấm **FREE · Nâng cấp Pro**, mua gói tháng / năm, key tự gửi qua email.
 
 ⚖️ Trước khi tải và cài, vui lòng đọc [Điều khoản sử dụng](TERMS.md), [Chính sách hoàn tiền](REFUND.md) và [Chính sách quyền riêng tư](PRIVACY.md). Cài đặt hoặc sử dụng phần mềm nghĩa là bạn đồng ý với các điều khoản này.
 
