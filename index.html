@@ -78,7 +78,8 @@ footer a{color:var(--mute)}
 </section>
 
 <h2 id="bang-gia">Bảng giá</h2>
-<p class="sub">Huỷ bất kỳ lúc nào · Hoàn tiền trong 7 ngày nếu không cứu được file nào</p>
+<p class="sub">Hoàn tiền trong 7 ngày nếu không cứu được file nào</p>
+<p class="sub" style="margin:0 auto 18px;max-width:760px;padding:12px 16px;border:1px solid rgba(251,191,36,.35);background:rgba(251,191,36,.08);border-radius:12px;color:#fde68a;font-size:14px">🕒 <b>Đang nhận đặt trước.</b> Key được gửi qua email ngay khi thanh toán và <b>kích hoạt được từ bản CardRevive có gói Pro</b> (sắp phát hành). Bạn sẽ được báo qua email khi có bản mới.</p>
 <section class="prices">
   <div class="price"><h3>Free</h3><div class="amt">$0</div><small style="color:var(--mute)">Dùng mãi mãi</small>
     <ul><li>Quét toàn bộ thẻ / ổ đĩa</li><li>Xem danh sách &amp; xem trước file tìm được</li><li>Sao lưu toàn thẻ ra file ảnh đĩa</li><li class="no">Khôi phục (tải về) file</li></ul>
@@ -112,7 +113,7 @@ footer a{color:var(--mute)}
  <div style="width:min(460px,100%);max-height:94vh;overflow:auto;background:linear-gradient(180deg,#1c2134,#0e121e);border:1px solid var(--line2);border-radius:20px;padding:24px">
   <h3 style="margin:0 0 4px;font-size:20px" id="bTitle">Mua CardRevive Pro</h3>
   <div id="bForm">
-   <p style="color:var(--mute);margin:0 0 14px;font-size:14px">Key sẽ được tự động gửi tới email của bạn sau khi chuyển khoản.</p>
+   <p style="color:var(--mute);margin:0 0 14px;font-size:14px">Key sẽ được tự động gửi tới email của bạn sau khi chuyển khoản.<br><span style="color:#fde68a">Đặt trước: key kích hoạt được từ bản CardRevive có gói Pro (sắp phát hành).</span></p>
    <label class="lb">Gói</label>
    <select id="bPlan" class="in"><option value="month">Pro tháng – 499.000đ</option><option value="year">Pro năm – 2.490.000đ (tiết kiệm 59%)</option></select>
    <label class="lb">Email nhận key</label><input id="bEmail" class="in" type="email" placeholder="ban@gmail.com" autocomplete="email">
@@ -140,7 +141,7 @@ footer a{color:var(--mute)}
 <style>.lb{display:block;font-size:13px;color:var(--mute);margin:10px 0 5px}.in{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line2);background:rgba(0,0,0,.3);color:var(--ink);font:inherit}</style>
 <script>
 // Máy chủ bán key tự động (Google Apps Script). Để trống = chưa mở bán.
-const SERVER = '';
+const SERVER = 'https://script.google.com/macros/s/AKfycbyj4v2mMfrRMWXZ1_Q4eoyVRcXVCb23TZhZxG0UPDmFKDV_zm9RROYe_dWSrg9ZhX1p/exec';
 const $ = id => document.getElementById(id);
 const fmt = n => n.toLocaleString('vi-VN') + 'đ';
 let poll = null;
@@ -178,7 +179,7 @@ $('bGo').onclick = async () => {
   } catch (e) { $('bErr').textContent = 'Không kết nối được máy chủ. Thử lại sau ít phút.'; }
 };
 document.querySelectorAll('.buy').forEach(b => {
-  if (SERVER) { b.removeAttribute('aria-disabled'); b.textContent = 'Mua ngay'; b.href = '#mua'; b.onclick = e => { e.preventDefault(); openBuy(b.dataset.plan); }; }
+  if (SERVER) { b.removeAttribute('aria-disabled'); b.textContent = 'Đặt trước ngay'; b.href = '#mua'; b.onclick = e => { e.preventDefault(); openBuy(b.dataset.plan); }; }
 });
 if (SERVER && location.hash === '#mua') openBuy(new URLSearchParams(location.search).get('plan'));
 </script>
