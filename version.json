@@ -6,9 +6,9 @@
     "notes": "App tự báo khi có bản mới, tự kích hoạt lại Pro sau khi cài lại. Gồm công cụ Cứu video Sony đã format."
   },
   "win": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-Windows-x64.zip",
     "page": "https://thainguyen-dr.github.io/cardrevive-releases/",
-    "notes": "Bản Windows đầu tiên."
+    "notes": "Sửa lỗi quét thẻ nhớ trực tiếp trên Windows; tắt hộp hỏi dịch trang. Key Pro và mã máy được giữ nguyên."
   }
 }
