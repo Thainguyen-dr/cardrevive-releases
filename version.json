@@ -1,14 +1,14 @@
 {
   "mac": {
-    "version": "4.9.4.3",
+    "version": "4.9.5",
     "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-4.9.4-macOS.pkg",
     "page": "https://thainguyen-dr.github.io/cardrevive-releases/",
-    "notes": "Sửa lỗi app có thể tự gỡ key Pro đã kích hoạt. Key Pro và mã máy được giữ nguyên."
+    "notes": "Mới: Cứu thẻ lỗi (thẻ trống trơn, không thấy file, máy đòi format) giữ đúng tên gốc, thư mục, ngày giờ. Gói Free xem trọn video đã ghép. Bảng khôi phục có % và thời gian còn lại."
   },
   "win": {
-    "version": "1.0.1",
+    "version": "1.1.0",
     "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-Windows-x64.zip",
     "page": "https://thainguyen-dr.github.io/cardrevive-releases/",
-    "notes": "Sửa lỗi quét thẻ nhớ trực tiếp trên Windows; tắt hộp hỏi dịch trang. Key Pro và mã máy được giữ nguyên."
+    "notes": "Mới: Cứu thẻ lỗi (thẻ trống trơn, không thấy file, Windows đòi format) giữ đúng tên gốc, thư mục, ngày giờ. Gói Free xem trọn video."
   }
 }
