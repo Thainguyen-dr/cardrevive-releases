@@ -1,0 +1,14 @@
+{
+  "mac": {
+    "version": "4.9.4.2",
+    "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-4.9.4-macOS.pkg",
+    "page": "https://thainguyen-dr.github.io/cardrevive-releases/",
+    "notes": "App tự báo khi có bản mới, tự kích hoạt lại Pro sau khi cài lại. Gồm công cụ Cứu video Sony đã format."
+  },
+  "win": {
+    "version": "1.0.0",
+    "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-Windows-x64.zip",
+    "page": "https://thainguyen-dr.github.io/cardrevive-releases/",
+    "notes": "Bản Windows đầu tiên."
+  }
+}
