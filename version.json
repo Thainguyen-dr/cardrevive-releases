@@ -1,14 +1,14 @@
 {
   "mac": {
-    "version": "5.0.0",
+    "version": "5.1.0",
     "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-macOS.pkg",
     "page": "https://thainguyen-dr.github.io/cardrevive-releases/",
-    "notes": "CardRevive 5: phần lõi mới nhanh hơn, cứu thẻ lỗi giữ đúng tên gốc và thư mục, cứu video Sony đã format, sao lưu thẻ có % và thời gian còn lại. Key Pro đã mua dùng tiếp, không cần nhập lại."
+    "notes": "Mới: cứu thẻ / ổ lỗi đọc được ổ NTFS (ổ cứng, ổ ngoài định dạng Windows) giữ đúng tên, thư mục, lấy cả file đã xoá. Key Pro dùng tiếp."
   },
   "win": {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-Windows-x64.zip",
     "page": "https://thainguyen-dr.github.io/cardrevive-releases/",
-    "notes": "Sao lưu thẻ có % và thời gian còn lại; nút Cứu video Sony ngay sau khi sao lưu. Key Pro và mã máy được giữ nguyên."
+    "notes": "Mới: cứu thẻ / ổ lỗi đọc được ổ NTFS giữ đúng tên, thư mục, lấy cả file đã xoá. Key Pro và mã máy được giữ nguyên."
   }
 }
