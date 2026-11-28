@@ -1,14 +1,14 @@
 {
   "mac": {
-    "version": "4.9.5",
-    "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-4.9.4-macOS.pkg",
+    "version": "5.0.0",
+    "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-macOS.pkg",
     "page": "https://thainguyen-dr.github.io/cardrevive-releases/",
-    "notes": "Mới: Cứu thẻ lỗi (thẻ trống trơn, không thấy file, máy đòi format) giữ đúng tên gốc, thư mục, ngày giờ. Gói Free xem trọn video đã ghép. Bảng khôi phục có % và thời gian còn lại."
+    "notes": "CardRevive 5: phần lõi mới nhanh hơn, cứu thẻ lỗi giữ đúng tên gốc và thư mục, cứu video Sony đã format, sao lưu thẻ có % và thời gian còn lại. Key Pro đã mua dùng tiếp, không cần nhập lại."
   },
   "win": {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "url": "https://github.com/Thainguyen-dr/cardrevive-releases/releases/latest/download/CardRevive-Windows-x64.zip",
     "page": "https://thainguyen-dr.github.io/cardrevive-releases/",
-    "notes": "Mới: Cứu thẻ lỗi (thẻ trống trơn, không thấy file, Windows đòi format) giữ đúng tên gốc, thư mục, ngày giờ. Gói Free xem trọn video."
+    "notes": "Sao lưu thẻ có % và thời gian còn lại; nút Cứu video Sony ngay sau khi sao lưu. Key Pro và mã máy được giữ nguyên."
   }
 }
